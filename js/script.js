@@ -22,20 +22,20 @@ $('.your-class').slick({
   dots: true,
 });
 
-$('.video').click(function () {
-  $('.video').removeClass('active');
-  $(this).addClass('active');
-});
+// $('.video').click(function () {
+//   $('.video').removeClass('active');
+//   $(this).addClass('active');
+// });
 
-$('.video').click(function () {
-  $('.video')
-    .not(this)
-    .find('video')
-    .each(function () {
-      var el_src = $(this).attr('src');
-      $(this).attr('src', el_src);
-    });
-});
+// $('.video').click(function () {
+//   $('.video')
+//     .not(this)
+//     .find('video')
+//     .each(function () {
+//       var el_src = $(this).attr('src');
+//       $(this).attr('src', el_src);
+//     });
+// });
 
 /* Header */
 

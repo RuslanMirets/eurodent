@@ -638,6 +638,12 @@ time {
   color: #fff !important;
 }
 
+@media (max-width: 767px){
+  .fancybox-slide.fancybox-slide--video {
+    padding: 10px;
+  }  
+}
+
 .zoom {
   display: inline-block;
   position: absolute;
