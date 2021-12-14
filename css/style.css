@@ -1968,6 +1968,12 @@ header .container {
   margin-left: -15px;
   display: flex;
 }
+.reviews__slider .slick-track {
+  display: flex;
+}
+.reviews__slider .slick-slide {
+  height: auto;
+}
 
 .review {
   display: inline-block;
@@ -2191,8 +2197,8 @@ header .container {
     margin-top: 12px;
   }
   .reviews .controls {
-    width: calc(100% + 10px);
-    min-width: calc(100% + 10px);
+    width: 100%;
+    min-width: 100%;
   }
 
   .reviews__slider {
