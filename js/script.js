@@ -401,35 +401,19 @@ $('.question__main').click(function () {
 $('.pride__slider').slick({
   infinite: true,
   dots: true,
-  arrows: true,
+  arrows: false,
   autoplay: false,
-  slidesToShow: 2,
-  slidesToScroll: 2,
-  rows: 2,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   prevArrow: '.pride__media .controls .slick-prev',
   nextArrow: '.pride__media .controls .slick-next',
 
   responsive: [
     {
-      breakpoint: 991,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 4,
-        slidesToScroll: 4,
-      },
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      },
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        rows: 1,
+        slidesToShow: 2,
+        slidesToScroll: 2,
       },
     },
   ],
