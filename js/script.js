@@ -111,7 +111,7 @@ $('.patients__slider').slick({
       settings: {
         slidesToShow: 1,
         arrows: false,
-        dots: true
+        dots: true,
       },
     },
   ],
@@ -130,13 +130,38 @@ $('.reviews__slider').slick({
 
   responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
       },
     },
     {
-      breakpoint: 575,
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        adaptiveHeight: true,
+      },
+    },
+  ],
+});
+$('.reviews__slider_alt').slick({
+  infinite: false,
+  dots: true,
+  arrows: false,
+  autoplay: false,
+  slidesToShow: 3,
+  prevArrow: '.reviews .controls .slick-prev',
+  nextArrow: '.reviews .controls .slick-next',
+
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
         adaptiveHeight: true,

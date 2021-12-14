@@ -2089,12 +2089,16 @@ header .container {
 }
 .section-reviews_alt .reviews .controls {
   top: calc(50% + 0px);
+  display: none;
 }
 .section-reviews_alt .btn {
   margin-left: auto;
   margin-right: auto;
   margin-top: 42px;
   margin-bottom: 22px;
+}
+.reviews__slider_alt {
+  padding-bottom: 20px;
 }
 
 @media (max-width: 1199px) {
@@ -2178,8 +2182,8 @@ header .container {
 }
 @media (max-width: 767px) {
   .reviews .controls {
-    width: calc(100% - 40px);
-    min-width: calc(100% - 40px);
+    width: calc(100% + 20px);
+    min-width: 100%;
     top: calc(50% - 0px);
   }
 
@@ -2202,11 +2206,6 @@ header .container {
   .reviews {
     margin-top: 12px;
   }
-  .reviews .controls {
-    width: 100%;
-    min-width: 100%;
-  }
-
   .reviews__slider {
     width: calc(100% + 20px);
     min-width: calc(100% + 20px);
