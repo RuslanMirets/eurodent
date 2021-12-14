@@ -2356,22 +2356,29 @@ header .container {
     width: calc(100% - 40px);
     min-width: calc(100% - 40px);
   }
-
+  .comfort__slider {
+    width: 100%;
+    min-width: 100%;
+  }
   .comfort__slider .slick-dots {
     display: none !important;
   }
+  .comfort__slider .slick-list {
+    left: 0;
+    transform: translateX(0);
+    overflow: hidden !important;
+  }
+  .comfort__slide {
+    min-width: auto;
+    height: 100%;
+    margin-right: 0;
+  }
+  .comfort__slide a {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 575px) {
-  .comfort .controls {
-    top: calc(50% + 10px);
-    width: calc(100% + 10px);
-    min-width: calc(100% + 10px);
-  }
-
-  .comfort__slide {
-    padding-top: 10px;
-  }
-
   .comfort-intro {
     width: calc(100% - 0px);
     margin-top: 6px;
@@ -2382,13 +2389,8 @@ header .container {
   .comfort-intro p {
     font-size: 18px;
   }
-
-  .comfort__slide {
-    margin-right: 12px;
-    margin-top: 22px;
-    min-width: 226px;
-    width: 226px;
-    height: 170px;
+  .comfort .controls {
+    width: 100%;
   }
 }
 /* Section-equipment */
@@ -3034,17 +3036,6 @@ header .container {
   padding-left: 25px;
   margin: 50px 0;
   border-left: 1px solid #ffffff;
-}
-.advantages__content::before {
-  /*
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: 0px;
-  top: -300px;
-  height: 300px;
-  width: 100%;
-  */
 }
 
 .advantage {

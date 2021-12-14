@@ -196,17 +196,11 @@ $('#section-comfort .comfort__slider').slick({
       },
     },
     {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
+        variableWidth: false,
       },
     },
   ],
