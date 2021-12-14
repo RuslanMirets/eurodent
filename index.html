@@ -17,7 +17,7 @@
   </head>
 
   <body class="body" id="body">
-    <header class="header" id="header_first">
+    <!-- <header class="header" id="header_first">
       <div class="container">
         <div class="row">
           <div class="header-content wow fadeIn">
@@ -409,7 +409,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="section-about" id="section-about">
       <div class="container">
@@ -437,13 +437,14 @@
               data-opacity="0"
               data-translatex="300"
             >
-              <div class="video">
-                <video src="videos/about-video.mp4" controls="controls"></video>
-                <div class="video__preview">
-                  <img src="img/about-video.png" alt="" />
-                  <div class="btn btn_play"></div>
+              <a data-fancybox="video-gallery" data-src="videos/about-video.mp4">
+                <div class="video">
+                  <div class="video__preview">
+                    <img src="img/about-video.png" alt="" />
+                    <div class="btn btn_play"></div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -483,8 +484,11 @@
           <div class="reviews">
             <div class="reviews__slider">
               <div class="review">
-                <div class="video">
-                  <video src="videos/review_01-video.mp4" controls="controls"></video>
+                <div
+                  class="video"
+                  data-fancybox="video-gallery"
+                  data-src="videos/review_01-video.mp4"
+                >
                   <div class="video__preview">
                     <img src="img/review-preview_01.png" alt="" />
                     <div class="btn btn_play"></div>
@@ -499,8 +503,8 @@
                 </div>
               </div>
               <div class="review">
-                <div class="video">
-                  <video src="videos/review_02-video.mp4" controls="controls"></video>
+                <div class="video" data-fancybox="video-gallery"
+                data-src="videos/review_02-video.mp4">
                   <div class="video__preview">
                     <img src="img/review-preview_02.png" alt="" />
                     <div class="btn btn_play"></div>
