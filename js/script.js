@@ -182,15 +182,21 @@ $('.professionals__slider').slick({
 
   responsive: [
     {
-      breakpoint: 991,
+      breakpoint: 992,
       settings: {
         slidesToShow: 3,
       },
     },
     {
-      breakpoint: 575,
+      breakpoint: 576,
       settings: {
         slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 426,
+      settings: {
+        slidesToShow: 1,
       },
     },
   ],
@@ -334,22 +340,30 @@ $('.equipment__items').slick({
       },
     },
     {
-      breakpoint: 1199,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 4,
         slidesToScroll: 2,
       },
     },
     {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: {
         slidesToShow: 3,
       },
     },
     {
-      breakpoint: 575,
+      breakpoint: 576,
       settings: {
         slidesToShow: 2,
+        slidesTslidesToScroll: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 426,
+      settings: {
+        slidesToShow: 1,
         slidesTslidesToScroll: 1,
         slidesToScroll: 1,
       },
