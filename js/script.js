@@ -22,21 +22,6 @@ $('.your-class').slick({
   dots: true,
 });
 
-// $('.video').click(function () {
-//   $('.video').removeClass('active');
-//   $(this).addClass('active');
-// });
-
-// $('.video').click(function () {
-//   $('.video')
-//     .not(this)
-//     .find('video')
-//     .each(function () {
-//       var el_src = $(this).attr('src');
-//       $(this).attr('src', el_src);
-//     });
-// });
-
 /* Header */
 
 $('.menu li.menu__services .ref').hover(function () {
@@ -558,11 +543,11 @@ $('.close').click(function () {
   $('.body').removeClass('body-fixed');
 });
 
-$('.burger').click(function () {
-  $(this).find('img').toggleClass('active');
-  $('.body').toggleClass('body-fixed');
-  $('.modal_mob-menu').toggleClass('active');
-});
+// $('.burger').click(function () {
+//   $(this).find('img').toggleClass('active');
+//   $('.body').toggleClass('body-fixed');
+//   $('.modal_mob-menu').toggleClass('active');
+// });
 
 $('.mob-menu ul li').click(function () {
   $('.mob-menu ul li').not(this).removeClass('active');
@@ -683,94 +668,16 @@ $(document).ready(function () {
   });
 });
 
-/*
-  
-  $('.burger').click(function () {
-      $('.overlay_white').toggleClass("active");
-      $('.mobile-menu').toggleClass("active");
-      $('.body').toggleClass("body-fixed");
-  });
-  
-  $('.modal:not(.modal_request-ip, .modal_request-tv-01, .modal_request-tv-02) .close, .modal:not(.modal_request-ip, .modal_request-tv-01, .modal_request-tv-02) .btn').click(function () {
-      $('.burger').removeClass("active");
-      $('header').removeClass("active");
-      $('.overlay_dark').removeClass("active");
-      $('.modal').removeClass("active");
-      $('.body').removeClass("body-fixed");
-      $('.modal').removeClass("modal-rollup");
-      $('.mobile-menu').removeClass("active");
-  });
-  
-  $('.modal_request .btn, .modal_request .close').click(function () {
-      $(this).closest('.modal_request').removeClass("active");
-      $('.modal:not(.modal_request)').removeClass("modal-rollup");
-  });
-  
-  $('.modal_request .btn').click(function () {
-      $(this).find('.сonnect').toggleClass("active");
-      $(this).find('.disсonnect').toggleClass("active");
-  });
-  
-  $('.modal-call').click(function () {
-      $('.burger').removeClass("active");
-      $('header').removeClass("active");
-      $('.overlay_dark').addClass("active");
-      $('.overlay_white').removeClass("active");
-      $('.mobile-menu').removeClass("active");
-      $('.body').addClass("body-fixed");
-      $('.mobile-menu').removeClass("active");
-  });
-  
-  $('.modal-call_notification').click(function () {
-      $('.modal_notification').addClass("active");
-  });
-  
-  $('.modal-call_request-sip').click(function () {
-      $('.modal_request-sip').addClass("active");
-  });
-  
-  $('.modal-call_request-video').click(function () {
-      $('.modal_request-video').addClass("active");
-  });
-  
-  $('.modal-call_request-ip').click(function () {
-      $('.modal:not(.modal_request)').addClass("modal-rollup");
-      $('.modal_request-ip').addClass("active");
-  });
-  
-  $('.modal-call_request-tv-01').click(function () {
-    $('.modal:not(.modal_request)').addClass("modal-rollup");
-      $('.modal_request-tv-01').addClass("active");
-  });
-  
-  $('.modal-call_request-tv-02').click(function () {
-    $('.modal:not(.modal_request)').addClass("modal-rollup");
-      $('.modal_request-tv-02').addClass("active");
-  });
-  
-  $('.modal-call_internet').click(function () {
-      $('.modal_internet').addClass("active");
-  });
-  
-  $('.modal-call_tv').click(function () {
-      $('.modal_tv').addClass("active");
-  });
-  
-  $('.modal-call_request-autopayment').click(function () {
-      $('.modal_request-autopayment').addClass("active");
-  });
-  
-  $('.modal-call_request-pause').click(function () {
-      $('.modal_request-pause').addClass("active");
-  });
-  
-  
-  $('.overlay_dark').click(function () {
-      $(this).removeClass("active");
-      $('.modal-main').removeClass("active");
-       $('.modal').removeClass("active");
-       $('.modal').removeClass("modal-rollup");
-      $('.body').removeClass("body-fixed");
-  });
-  
-  */
+document.addEventListener('DOMContentLoaded', () => {
+  new Mmenu(
+    '#menu',
+    {
+      navbar: {
+        title: 'Меню',
+      },
+    },
+    {
+      language: 'ru',
+    },
+  );
+});
