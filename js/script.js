@@ -408,15 +408,15 @@ $('.pride__slider').slick({
   prevArrow: '.pride__media .controls .slick-prev',
   nextArrow: '.pride__media .controls .slick-next',
 
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-  ],
+  // responsive: [
+  //   {
+  //     breakpoint: 768,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 2,
+  //     },
+  //   },
+  // ],
 });
 
 /* Section-changes */

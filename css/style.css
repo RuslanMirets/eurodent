@@ -6016,7 +6016,7 @@ header .container {
     flex-direction: column;
   }
   .pride__media {
-    max-width: 600px;
+    max-width: 500px;
   }
   .pride__media .controls {
     width: calc(100% - 40px);
@@ -6060,10 +6060,10 @@ header .container {
     margin-right: 2.5px !important;
     width: calc(100% - 5px) !important;
   }
-  .pride__slider a img {
+  /* .pride__slider a img {
     height: 45vw;
     min-height: 160px;
-  }
+  } */
   .pride__slider .slick-dots {
     bottom: -32px;
   }
