@@ -121,8 +121,8 @@ $('.patients__slider').slick({
 
 $('.reviews__slider').slick({
   infinite: false,
-  dots: false,
-  arrows: true,
+  dots: true,
+  arrows: false,
   autoplay: false,
   slidesToShow: 3,
   prevArrow: '.reviews .controls .slick-prev',
