@@ -6838,6 +6838,14 @@ header .container {
     min-height: 180px;
   }
 }
+@media (max-width: 425px){
+  .changes__slide img {
+    height: 85vw;
+  }
+  .changes__slider .slick-dots {
+    bottom: -46px;
+  }
+}
 /* Section-offer */
 .section-offer {
   padding: 60px 0;

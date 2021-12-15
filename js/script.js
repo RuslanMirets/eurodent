@@ -458,6 +458,12 @@ $('.changes__slider').slick({
         slidesToShow: 2,
       },
     },
+    {
+      breakpoint: 426,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
   ],
 });
 
