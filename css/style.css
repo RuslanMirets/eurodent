@@ -1942,7 +1942,7 @@ nav.menu-sub {
 @media (max-width: 375px) {
   .appointment .check {
     max-width: 240px;
-    margin-left: 0px;
+    margin-left: auto;
     margin-right: auto;
   }
 }
@@ -6086,7 +6086,7 @@ nav.menu-sub {
     min-height: 160px;
   } */
   .pride__slider .slick-dots {
-    bottom: -32px;
+    bottom: -44px;
   }
 
   .pride__info {
@@ -6774,6 +6774,7 @@ nav.menu-sub {
     transform: translateX(50%);
     top: auto;
     bottom: -48px;
+    width: 100%;
   }
 
   .changes__slide {
