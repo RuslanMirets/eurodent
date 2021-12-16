@@ -919,6 +919,82 @@ header .container {
 .header-content .btn:hover {
   background: rgba(243, 144, 53, 0.9);
 }
+nav:not(.mm-menu) {
+  display: none;
+}
+nav.menu {
+  display: block;
+}
+nav.menu-sub {
+  display: flex;
+}
+.mm-wrapper--opened .mm-slideout {
+  transform: translate(0);
+}
+#menu {
+  z-index: 999;
+}
+.mm-menu--offcanvas {
+  transition: transform 0.3s;
+  width: 80%;
+  min-width: 240px;
+  max-width: 440px;
+}
+.mm-menu--offcanvas:not(.mm-menu--opened) {
+  visibility: visible;
+  pointer-events: none;
+  transform: translateX(-100%);
+}
+.mm-menu--offcanvas.mm-menu--opened {
+  transform: translateX(0);
+}
+.mm-wrapper__blocker {
+  transition: all 0.3s;
+  visibility: visible !important;
+  transform: translateX(0) !important;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+.mm-wrapper__blocker:focus {
+  opacity: 0;
+}
+.mm-wrapper--opened .mm-wrapper__blocker {
+  opacity: 0.5;
+  pointer-events: all;
+}
+.mm-navbar__title span {
+  color: #9a9a9a;
+}
+.mobile-menu__contacts {
+  padding-left: 20px;
+  padding-top: 15px;
+}
+.mobile-menu__contacts li {
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.mobile-menu__contacts li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+}
+.mobile-menu__contacts li:nth-child(1)::before {
+  background-image: url('../img/header-contact_time.svg');
+}
+.mobile-menu__contacts li:nth-child(2)::before {
+  background-image: url('../img/header-contact_map.svg');
+}
+.mobile-menu__contacts li:nth-child(3)::before {
+  background-image: url('../img/header-contact_call.svg');
+}
 
 @media (max-width: 1420px) {
   .header-contact {
@@ -949,63 +1025,48 @@ header .container {
     bottom: -1px;
   }
 
-  .header-contact {
+  /* .header-contact {
     font-size: 11px;
-  }
+  } */
   .header-contact img {
     top: -1.5px;
   }
-
+  .header-contact--worktime {
+    display: none;
+  }
   .header-connection {
     padding-left: 15px;
     padding-top: 0px;
   }
-  .header-connection .header-contact {
+  /* .header-connection .header-contact {
     font-size: 17px;
     margin-left: 18px;
-  }
+  } */
   .header-connection .header-contact img {
     top: calc(50% - 1px);
   }
   .header-connection .ref_dashed {
     top: -2px;
   }
-
-  .menu .ref {
-    font-size: 10.5px;
-    margin-right: 18px;
+  #header_second .header-content {
+    min-height: 45px;
   }
 
+  .menu {
+    width: 100%;
+  }
+  .menu ul {
+    justify-content: space-between;
+  }
+  .menu .ref {
+    margin-right: 0;
+    font-size: 13px;
+  }
   .header-content .btn {
-    min-height: 45px;
-    font-size: 11px;
-    width: 145px;
+    display: none;
   }
 }
 @media (max-width: 991px) {
-  nav:not(.mm-menu) {
-    display: none;
-  }
-  #page {
-    transform: translate(0) !important;
-  }
-  #menu {
-    z-index: 999;
-  }
-  .mm-menu--offcanvas {
-    transition: transform .3s;
-    width: 80%;
-    min-width: 240px;
-    max-width: 440px;
-  }
-  .mm-menu--offcanvas:not(.mm-menu--opened) {
-    visibility: visible;
-    pointer-events: none;
-    transform: translateX(-100%);
-  }
-  .mm-menu--offcanvas.mm-menu--opened {
-    transform: translateX(0);
-  }
   header.header_first {
     padding-bottom: 10px;
     padding-bottom: 15px;
@@ -1018,35 +1079,18 @@ header .container {
     z-index: 21; */
     display: none;
   }
-  .mm-wrapper__blocker {
-    transition: all 0.3s;
-    visibility: visible !important;
-    transform: translateX(0) !important;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .3s ease-in-out;
-  }
-  .mm-wrapper--opened .mm-wrapper__blocker {
-    opacity: .5;
-    pointer-events: all;
-  }
-
   .logo {
     margin-right: 0px;
   }
   .logo img {
     bottom: -3px;
   }
-
   .menu {
     display: none;
   }
-
   .header-contact {
     display: none;
   }
-
   .header-connection {
     padding-left: 0px;
     padding-top: 0px;
@@ -1056,7 +1100,6 @@ header .container {
     display: inline-block;
     margin-left: 30px;
   }
-
   .burger {
     display: inline-block;
     width: 25px;
@@ -1118,6 +1161,7 @@ header .container {
     padding-left: 20px;
   }
 }
+
 /* Section-main */
 .section-main {
   position: relative;
