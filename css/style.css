@@ -1977,6 +1977,9 @@ nav.menu-sub {
 .reviews__slider .slick-slide {
   height: auto;
 }
+.reviews__slider .slick-track {
+  display: flex;
+}
 
 .review {
   display: inline-block;
