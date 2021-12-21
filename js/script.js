@@ -9,12 +9,16 @@ $('[data-fancybox]:not(.slick-cloned)').fancybox();
 $('.input_tel').mask('+7(999) 999-99-99');
 
 $('form').submit(function () {
-  alert('Спасибо! Наш менеджер свяжется с Вами в ближайшее время.');
+  $('.overlay_dark').addClass('active');
+  $('.modal_appointment').removeClass('active');
+  $('.modal-success').addClass('active');
+  $('input').val('');
+  $('.check-box').prop('checked', false);
+  return false;
 });
 
 $('form button.btn').click(function () {
   if ($(this).closest('form').find("input[type='checkbox']:checked").length == 0) {
-    alert('Подтвердите согласие!');
   }
 });
 
@@ -541,6 +545,14 @@ $('.close').click(function () {
   $('.overlay').removeClass('active');
   $('.modal').removeClass('active');
   $('.body').removeClass('body-fixed');
+});
+$(document).keydown(function (e) {
+  if (e.keyCode == 27) {
+    $(this).find('.modal').removeClass('active');
+    $('.overlay').removeClass('active');
+    $('.modal').removeClass('active');
+    $('.body').removeClass('body-fixed');
+  }
 });
 
 // $('.burger').click(function () {
