@@ -247,17 +247,19 @@ $('#section-cases .comfort__slider').slick({
       },
     },
     {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
+        variableWidth: false,
       },
     },
     {
       breakpoint: 575,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 1,
         slidesToScroll: 1,
+        variableWidth: false,
       },
     },
   ],
@@ -284,17 +286,19 @@ $('#section-certificates .comfort__slider').slick({
       },
     },
     {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
+        variableWidth: false,
       },
     },
     {
       breakpoint: 575,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 1,
         slidesToScroll: 1,
+        variableWidth: false,
       },
     },
   ],

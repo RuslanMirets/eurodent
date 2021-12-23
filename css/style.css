@@ -2380,7 +2380,8 @@ nav.menu-sub {
   .comfort__slide {
     min-width: auto;
     height: 100%;
-    margin-right: 0;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .comfort__slide a {
     max-width: 600px;
@@ -7746,7 +7747,7 @@ nav.menu-sub {
 }
 @media (max-width: 575px) {
   .section-cases .comfort .controls {
-    top: calc(50% + 17px);
+    top: calc(50% + 26px);
     width: calc(100% + 10px);
     min-width: calc(100% + 10px);
   }
