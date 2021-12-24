@@ -2257,7 +2257,7 @@ nav.menu-sub {
 .comfort-intro {
   display: block;
   width: calc(100% - 100px);
-  max-width: 528px;
+  max-width: 650px;
 }
 .comfort-intro h2 {
   text-align: left;

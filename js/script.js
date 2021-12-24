@@ -5,6 +5,9 @@ $(document).ready(function () {
 /* Specification */
 
 $('[data-fancybox]:not(.slick-cloned)').fancybox();
+$('[data-fancybox]').fancybox({
+  backFocus: false,
+});
 
 $('.input_tel').mask('+7(999) 999-99-99');
 
