@@ -5857,7 +5857,6 @@ nav.menu-sub {
   width: calc(100% + 48px);
   min-width: calc(100% + 48px);
   top: calc(50% - 2px);
-  display: none;
 }
 
 .pride__slider {
@@ -5950,6 +5949,7 @@ nav.menu-sub {
 
   .pride__media {
     width: 380px;
+    max-height: 383px;
   }
   .pride__media .controls {
     width: calc(100% + 28px);
@@ -6011,6 +6011,7 @@ nav.menu-sub {
   .pride__media .controls {
     width: calc(100% + 20px);
     min-width: calc(100% + 20px);
+    top: calc(50% - 40px);
   }
 
   .pride__slider {
@@ -6042,10 +6043,12 @@ nav.menu-sub {
   }
   .pride__media {
     max-width: 500px;
+    max-height: 100%;
   }
   .pride__media .controls {
-    width: calc(100% - 40px);
-    min-width: calc(100% - 40px);
+    width: calc(100% + 50px);
+    min-width: calc(100% + 50px);
+    top: calc(50% - 2px);
   }
 
   .pride__info {
@@ -9256,13 +9259,13 @@ div.close {
     max-width: calc(100% - 70px);
   }
 }
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .modal-success.active {
     max-width: calc(100% - 60px);
     min-height: 520px;
   }
 }
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .modal-success.active {
     width: calc(100% - 35px);
     max-width: calc(100% - 35px);
@@ -9275,7 +9278,7 @@ div.close {
     padding: 20px;
   }
 }
-@media (max-width: 575px){
+@media (max-width: 575px) {
   .modal-success.active {
     width: calc(100% - 30px);
     max-width: calc(100% - 30px);

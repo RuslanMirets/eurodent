@@ -411,7 +411,7 @@ $('.question__main').click(function () {
 $('.pride__slider').slick({
   infinite: true,
   dots: true,
-  arrows: false,
+  arrows: true,
   autoplay: false,
   slidesToShow: 1,
   slidesToScroll: 1,
