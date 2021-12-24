@@ -700,3 +700,20 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   );
 });
+
+$('.answers__item-action--1').click(function () {
+  $('.answers__item-content--1').toggleClass('active');
+  $(this).toggleClass('active');
+});
+$('.answers__item-action--2').click(function () {
+  $('.answers__item-content--2').toggleClass('active');
+  $(this).toggleClass('active');
+});
+$('.answers__item-action--3').click(function () {
+  $('.answers__item-content--3').toggleClass('active');
+  $(this).toggleClass('active');
+});
+$('.answers__item-action--4').click(function () {
+  $('.answers__item-content--4').toggleClass('active');
+  $(this).toggleClass('active');
+});
