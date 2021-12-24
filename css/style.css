@@ -734,7 +734,7 @@ time {
 
   .check {
     padding-left: 42px;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
@@ -773,7 +773,7 @@ time {
   }
 
   p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.3em;
   }
 
@@ -787,7 +787,7 @@ time {
   .check-list li {
     padding-left: 22px;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.3em;
   }
   .check-list li::before {
@@ -1397,7 +1397,7 @@ nav.menu-sub {
     display: block;
   }
   .main__slide p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 /* Section-patients */
@@ -2236,9 +2236,11 @@ nav.menu-sub {
     right: 20px;
     bottom: 20px;
   }
-
-  .review__info b {
+  .review__main {
     font-size: 16px;
+  }
+  .review__info b {
+    font-size: 18px;
   }
 
   .section-reviews_alt p {
@@ -2636,12 +2638,12 @@ nav.menu-sub {
   }
   .equipment__text span {
     padding-top: 0px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 425px) {
   .equipment__items .slick-track {
-    height: 450px;
+    min-height: 460px;
   }
   .equipment__item img {
     width: calc(100% - 20px);
@@ -2752,7 +2754,7 @@ nav.menu-sub {
 }
 @media (max-width: 575px) {
   .chief__title {
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 70px;
   }
   .chief__title::before {
@@ -2770,7 +2772,7 @@ nav.menu-sub {
     line-height: 25px;
   }
   .chief h4 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 /* Section-professionals */
@@ -2977,7 +2979,7 @@ nav.menu-sub {
 
   .professionals .controls {
     width: calc(100% + 10px);
-    top: calc(50% - 70px);
+    top: calc(50% - 80px);
   }
 
   .professionals__slider {
@@ -2999,19 +3001,19 @@ nav.menu-sub {
   }
   .professional img {
     min-height: 180px;
-    height: 100vw;
+    height: auto;
     margin-bottom: 18px;
     object-fit: contain;
   }
   .professional b {
-    font-size: 14px !important;
+    font-size: 16px !important;
     transform: none !important;
     -webkit-appearance: none !important;
     appearance: none !important;
     margin-bottom: 8px;
   }
   .professional p {
-    font-size: 12px !important;
+    font-size: 15px !important;
     line-height: 1.3em !important;
     -webkit-appearance: none !important;
     appearance: none !important;
@@ -3469,7 +3471,7 @@ nav.menu-sub {
     margin-top: 15px;
   }
   .recommendation__part-content li {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 15px;
   }
 }
@@ -3766,7 +3768,7 @@ nav.menu-sub {
     align-items: flex-end;
   }
   .prices__item span {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .prices-attention {
@@ -4428,7 +4430,7 @@ nav.menu-sub {
     margin-top: 16px;
   }
   .intro__info b {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 15px;
   }
   .intro__info b br {
@@ -4449,7 +4451,7 @@ nav.menu-sub {
     padding-bottom: 48px;
   }
   .section-intro_implantation .intro__info p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .section-intro_veneers .intro__info {
@@ -4653,7 +4655,7 @@ nav.menu-sub {
     margin-top: 30px;
   }
   .guarantee__item p {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 /* Section-success */
@@ -5841,7 +5843,7 @@ nav.menu-sub {
     margin-top: 15px;
   }
   .skills__info p {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 /* Section-pride */
@@ -7126,6 +7128,7 @@ nav.menu-sub {
   }
   .offer p {
     margin-bottom: 15px;
+    font-size: 16px;
     line-height: 1.4em;
   }
   .offer ul:not(.check-list) {
@@ -7134,6 +7137,7 @@ nav.menu-sub {
   .offer ul:not(.check-list) li {
     min-height: 30px;
     padding-left: 35px;
+    font-size: 16px;
     line-height: 1.4em;
   }
   .offer ul:not(.check-list) li span {
@@ -7643,7 +7647,7 @@ nav.menu-sub {
     padding-bottom: 6px;
   }
   .doctor__education-item p {
-    font-size: 15px;
+    font-size: 16px;
     width: 100%;
     text-align: center;
   }
@@ -8394,7 +8398,7 @@ nav.menu-sub {
     width: 100%;
     text-align: center;
     margin-top: 19px;
-    font-size: 15px;
+    font-size: 16px;
     padding-left: 0px;
   }
   .credit__content li::before {
@@ -8431,7 +8435,7 @@ nav.menu-sub {
   }
 
   .credit__content h3 {
-    font-size: 15px;
+    font-size: 16px;
     padding-top: 30px;
   }
   .credit__content ul {
@@ -8550,7 +8554,7 @@ footer {
 .copyright p {
   display: block;
   max-width: 201px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2em;
   font-family: 'Lato-Light', sans-serif;
   color: #ffffff;
@@ -8633,10 +8637,6 @@ footer {
 }
 
 @media (max-width: 1680px) {
-  .copyright p {
-    font-size: 12px;
-  }
-
   .footer-menu ul .ref {
     font-size: 14px;
   }
