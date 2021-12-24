@@ -948,6 +948,9 @@ nav.menu-sub {
 .mm-menu--offcanvas.mm-menu--opened {
   transform: translateX(0);
 }
+.mm-panels {
+  border-right: 2px solid #67bc9e;
+}
 .mm-wrapper__blocker {
   transition: all 0.3s;
   visibility: visible !important;
