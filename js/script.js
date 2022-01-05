@@ -717,3 +717,39 @@ $('.answers__item-action--4').click(function () {
   $('.answers__item-content--4').toggleClass('active');
   $(this).toggleClass('active');
 });
+
+$('.category-info__doctors-slider').slick({
+  infinite: true,
+  autoplay: false,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  prevArrow: '.category-info__doctors .controls .slick-prev',
+  nextArrow: '.category-info__doctors .controls .slick-next',
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        arrows: true,
+      },
+    },
+  ],
+});
+
+$('.category-info__content-btn').click(function () {
+  $('.category-info__content-hide').toggleClass('active');
+  $(this).toggleClass('active');
+});
+
+// $(".category-info__content-btn").html('Читать далее');
+// $(".category-info__content-btn.active").html('Скрыть');
+
+$('.category-info__content-btn').click(function () {
+  if ($(this).attr('data-show') === 'true') {
+    $(this).text('Читать далее');
+    $(this).attr('data-show', 'false');
+  } else {
+    $(this).text('Скрыть');
+    $(this).attr('data-show', 'true');
+  }
+});
