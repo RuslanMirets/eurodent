@@ -4448,11 +4448,14 @@ nav.menu-sub {
   .section-intro_service .intro__info h2 {
     max-width: 460px;
   }
-  .intro-type_mini-implanty {
+  .intro-type--mini-implanty {
     background-color: #222222;
   }
-  .intro-type_kostnaya-plastika {
+  .intro-type--kostnaya-plastika {
     background-color: #919b92;
+  }
+  .intro-type--odnomomentnaya-implantatsiya {
+    background-color: #5d5049;
   }
   .intro__bg {
     display: none;
