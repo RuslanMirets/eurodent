@@ -4451,6 +4451,9 @@ nav.menu-sub {
   .intro-type_mini-implanty {
     background-color: #222222;
   }
+  .intro-type_kostnaya-plastika {
+    background-color: #919b92;
+  }
   .intro__bg {
     display: none;
   }
@@ -6645,6 +6648,16 @@ nav.menu-sub {
   margin-bottom: 15px;
   font-family: 'Lato-Light', sans-serif;
   line-height: 1.5em;
+}
+.changes__item ul li {
+  margin-bottom: 15px;
+  font-family: 'Lato-Light', sans-serif;
+  line-height: 1.5em;
+}
+.changes__item ul li span {
+  font-family: 'Lato-Bold', serif;
+  color: #67bc9e;
+  padding-right: 4px;
 }
 
 .changes__media {
@@ -9367,7 +9380,7 @@ ol {
   position: absolute;
   font-family: 'Lato-Bold', serif;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 24px;
   color: #67bc9e;
   left: 0;
 }
