@@ -4460,6 +4460,9 @@ nav.menu-sub {
   .intro-type--lechenie-zabolevaniy-parodonta {
     background-color: #aeb4b5;
   }
+  .intro-type--parodontologicheskie-operatsii {
+    background-color: #648090;
+  }
   .intro__bg {
     display: none;
   }
