@@ -4488,8 +4488,11 @@ nav.menu-sub {
   .intro-type--metallokeramika {
     background-color: #cfced3;
   }
-  .intro-type--metallokeramika {
+  .intro-type--koronki-iz-oksida-tsirkoniya {
     background-color: #898981;
+  }
+  .intro-type--tselnokeramicheskie-vkladki {
+    background-color: #797e78;
   }
   .intro__bg {
     display: none;
