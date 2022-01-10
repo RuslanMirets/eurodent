@@ -4482,6 +4482,9 @@ nav.menu-sub {
   .intro-type--otbelivanie-zoom {
     background-color: #b5b4b2;
   }
+  .intro-type--semnye-protezy {
+    background-color: #eeeeeb;
+  }
   .intro__bg {
     display: none;
   }
