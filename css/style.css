@@ -4463,6 +4463,9 @@ nav.menu-sub {
   .intro-type--parodontologicheskie-operatsii {
     background-color: #648090;
   }
+  .intro-type--korrektsiya-uzdechki-guby-i-yazyka {
+    background-color: #90929b;
+  }
   .intro__bg {
     display: none;
   }
@@ -6662,6 +6665,7 @@ nav.menu-sub {
   margin-bottom: 15px;
   font-family: 'Lato-Light', sans-serif;
   line-height: 1.5em;
+  font-size: 17px;
 }
 .changes__item ul li span {
   font-family: 'Lato-Bold', serif;
@@ -6820,6 +6824,9 @@ nav.menu-sub {
   }
   .changes__info p {
     margin-bottom: 12px;
+  }
+  .changes__item ul li {
+    font-size: 16px;
   }
 
   .changes__slider {
