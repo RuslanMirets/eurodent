@@ -9534,3 +9534,21 @@ div.close {
 .section-professionals_type .controls .slick-hidden {
   display: none;
 }
+
+.section-main--all-on-4 .slick-dots{
+  display: none;
+}
+@media (max-width: 991px){
+  .section-main--all-on-4 .slick-list {
+    height: auto;
+  } 
+  .section-main--all-on-4 .main__slide {
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 576px){
+  .section-main--all-on-4 .main__slide {
+    padding-bottom: 40px;
+  }
+  
+}
