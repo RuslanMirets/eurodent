@@ -9121,6 +9121,10 @@ div.close {
   width: 53px;
   height: 42px;
 }
+.category-list__item-img--khirurgiya {
+  width: 27px;
+  height: 41px;
+}
 .category-list__item-title {
   font-family: 'Lato-Bold', sans-serif;
   font-size: 17px;
@@ -9198,6 +9202,9 @@ div.close {
 @media (max-width: 767px){
   .category-list__item {
     padding: 20px;
+  }
+  .category-list__item-img {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 575px) {
