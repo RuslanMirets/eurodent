@@ -4449,7 +4449,7 @@ nav.menu-sub {
     max-width: 460px;
   }
   .intro-type--mini-implanty {
-    background-color: #222222;
+    background-color: #151515;
   }
   .intro-type--kostnaya-plastika {
     background-color: #919b92;
@@ -4465,6 +4465,9 @@ nav.menu-sub {
   }
   .intro-type--korrektsiya-uzdechki-guby-i-yazyka {
     background-color: #90929b;
+  }
+  .intro-type--lazernaya-khirurgiya-zubov {
+    background-color: #151515;
   }
   .intro__bg {
     display: none;
