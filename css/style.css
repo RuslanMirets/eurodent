@@ -2829,6 +2829,7 @@ nav.menu-sub {
   height: 340px;
   object-fit: cover;
   margin-bottom: 23px;
+  background-color: #ffffff;
 }
 .professional:hover {
   transform: translateY(28px);
@@ -4474,6 +4475,9 @@ nav.menu-sub {
   }
   .intro-type--udalenie-kisty-zuba {
     background-color: #a1a0a5;
+  }
+  .intro-type--vnutrikanalnoe-otbelivanie-zubov {
+    background-color: #7bb2ad;
   }
   .intro__bg {
     display: none;
@@ -9202,7 +9206,7 @@ div.close {
     border-right: none;
   }
 }
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .category-list__item {
     padding: 20px;
   }
@@ -9262,11 +9266,15 @@ div.close {
   line-height: 22px;
 }
 .category-info__content p,
-ol {
+.category-info__content ol {
   margin-bottom: 20px;
 }
 .category-info__content a {
   color: #0000ee;
+}
+.category-info__content * {
+  font-size: 17px;
+  line-height: 22px;
 }
 .category-info__content-btn {
   font-family: 'Lato-Bold', sans-serif;
@@ -9369,6 +9377,10 @@ ol {
     margin-left: auto;
     margin-right: auto;
   }
+  .category-info__content * {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 .offer:nth-child(even) {
   background-color: #f3f7f6;
@@ -9413,8 +9425,6 @@ ol {
   margin-bottom: 25px;
 }
 .offer__text ul li {
-  display: flex;
-  align-items: center;
   font-family: 'Lato-Light', serif;
   font-size: 15px;
   line-height: 24px;
@@ -9430,6 +9440,8 @@ ol {
   line-height: 24px;
   color: #67bc9e;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .offer__actions {
   display: flex;
@@ -9458,6 +9470,10 @@ ol {
     font-size: 16px;
     text-align: left;
   }
+  .offer__text ul li span {
+    top: 0;
+    transform: translateY(0);
+  }
   .offer__actions {
     flex-direction: column;
     gap: 25px;
@@ -9475,7 +9491,6 @@ ol {
     margin-bottom: 20px;
   }
   .offer__text ul li {
-    align-items: flex-start;
     padding-left: 38px;
     margin-bottom: 20px;
   }
