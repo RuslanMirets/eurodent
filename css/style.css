@@ -4501,6 +4501,9 @@ nav.menu-sub {
   .intro-type--elaynery {
     background-color: #b4cad8;
   }
+  .intro-type--ispravlenie-prikusa {
+    background-color: #cfbab7;
+  }
   .intro__bg {
     display: none;
   }
@@ -6943,6 +6946,7 @@ nav.menu-sub {
   background: #67bc9e;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-top: 40px;
 }
 
 .service-advantages {
