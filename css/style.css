@@ -3013,6 +3013,7 @@ nav.menu-sub {
     height: auto;
     margin-bottom: 18px;
     object-fit: contain;
+    max-height: 368px;
   }
   .professional b {
     font-size: 16px !important;
@@ -4493,6 +4494,9 @@ nav.menu-sub {
   }
   .intro-type--tselnokeramicheskie-vkladki {
     background-color: #797e78;
+  }
+  .intro-type--treynery {
+    background-color: #4f4e54;
   }
   .intro__bg {
     display: none;
@@ -9539,18 +9543,18 @@ div.close {
   display: none;
 }
 
-.section-main--all-on-4 .slick-dots{
+.section-main--all-on-4 .slick-dots {
   display: none;
 }
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .section-main--all-on-4 .slick-list {
     height: auto;
-  } 
+  }
   .section-main--all-on-4 .main__slide {
     padding-bottom: 70px;
   }
 }
-@media (max-width: 576px){
+@media (max-width: 576px) {
   .section-main--all-on-4 .main__slide {
     padding-bottom: 40px;
   }
