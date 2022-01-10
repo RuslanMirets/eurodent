@@ -4485,6 +4485,9 @@ nav.menu-sub {
   .intro-type--semnye-protezy {
     background-color: #eeeeeb;
   }
+  .intro-type--metallokeramika {
+    background-color: #cfced3;
+  }
   .intro__bg {
     display: none;
   }
