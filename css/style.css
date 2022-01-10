@@ -4472,6 +4472,9 @@ nav.menu-sub {
   .intro-type--professionalnaya-chistka-zubov {
     background-color: #f4c377;
   }
+  .intro-type--udalenie-kisty-zuba {
+    background-color: #a1a0a5;
+  }
   .intro__bg {
     display: none;
   }
