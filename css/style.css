@@ -9135,12 +9135,17 @@ div.close {
   width: 27px;
   height: 41px;
 }
+.category-list__item-img--protezirovanie-zubov {
+  width: 40px;
+  height: 42px;
+}
 .category-list__item-title {
   font-family: 'Lato-Bold', sans-serif;
   font-size: 17px;
   line-height: 24px;
   color: #0e8076;
   text-align: center;
+  text-transform: uppercase;
   margin-bottom: 20px;
   transition: all 0.3s;
 }
