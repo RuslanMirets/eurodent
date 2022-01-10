@@ -9114,9 +9114,13 @@ div.close {
 .category-list__item-img img:nth-child(2) {
   opacity: 0;
 }
+.category-list__item-img--parodontologiya {
+  width: 53px;
+  height: 42px;
+}
 .category-list__item-title {
   font-family: 'Lato-Bold', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   color: #0e8076;
   text-align: center;
@@ -9124,8 +9128,8 @@ div.close {
   transition: all 0.3s;
 }
 .category-list__item-text {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 18px;
   color: #8c8c8c;
   text-align: center;
   transition: all 0.3s;
@@ -9188,6 +9192,11 @@ div.close {
     border-right: none;
   }
 }
+@media (max-width: 767px){
+  .category-list__item {
+    padding: 20px;
+  }
+}
 @media (max-width: 575px) {
   .category-list__items {
     grid-template-columns: 1fr;
@@ -9236,6 +9245,8 @@ div.close {
 }
 .category-info__content li {
   margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 22px;
 }
 .category-info__content p,
 ol {
@@ -9325,6 +9336,10 @@ ol {
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 0;
+  }
+  .category-info__content li {
+    font-size: 16px;
+    line-height: 21px;
   }
   .category-info__doctors-slider {
     margin-bottom: 15px;
