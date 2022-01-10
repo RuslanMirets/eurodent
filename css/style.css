@@ -9151,6 +9151,10 @@ div.close {
   width: 40px;
   height: 42px;
 }
+.category-list__item-img--ortodontiya {
+  width: 33px;
+  height: 13px;
+}
 .category-list__item-title {
   font-family: 'Lato-Bold', sans-serif;
   font-size: 17px;
@@ -9550,5 +9554,4 @@ div.close {
   .section-main--all-on-4 .main__slide {
     padding-bottom: 40px;
   }
-  
 }
