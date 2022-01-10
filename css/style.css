@@ -4507,6 +4507,9 @@ nav.menu-sub {
   .intro-type--semnye-ortodonticheskie-apparaty {
     background-color: #b2d16a;
   }
+  .intro-type--nesemnye-apparaty {
+    background-color: #4c655e;
+  }
   .intro__bg {
     display: none;
   }
