@@ -4479,6 +4479,9 @@ nav.menu-sub {
   .intro-type--vnutrikanalnoe-otbelivanie-zubov {
     background-color: #7bb2ad;
   }
+  .intro-type--otbelivanie-zoom {
+    background-color: #b5b4b2;
+  }
   .intro__bg {
     display: none;
   }
