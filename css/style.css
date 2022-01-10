@@ -4469,6 +4469,9 @@ nav.menu-sub {
   .intro-type--lazernaya-khirurgiya-zubov {
     background-color: #151515;
   }
+  .intro-type--professionalnaya-chistka-zubov {
+    background-color: #f4c377;
+  }
   .intro__bg {
     display: none;
   }
