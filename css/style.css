@@ -4525,6 +4525,9 @@ nav.menu-sub {
   .intro-type--lechenie-zubov {
     background-color: #3d3938;
   }
+  .intro-type--esteticheskaya-restavratsiya {
+    background-color: #6b6d63;
+  }
   .intro__bg {
     display: none;
   }
