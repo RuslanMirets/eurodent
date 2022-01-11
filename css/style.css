@@ -4522,6 +4522,9 @@ nav.menu-sub {
   .intro-type--kompyuternaya-tomografiya {
     background-color: #a5a29b;
   }
+  .intro-type--lechenie-zubov {
+    background-color: #3d3938;
+  }
   .intro__bg {
     display: none;
   }
