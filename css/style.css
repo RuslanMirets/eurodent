@@ -4531,6 +4531,9 @@ nav.menu-sub {
   .intro-type--izvlechenie-inorodnykh-tel {
     background-color: #5a646d;
   }
+  .intro-type--udalenie-molochnykh-zubov {
+    background-color: #e7ac46;
+  }
   .intro__bg {
     display: none;
   }
