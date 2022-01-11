@@ -4528,6 +4528,9 @@ nav.menu-sub {
   .intro-type--esteticheskaya-restavratsiya {
     background-color: #6b6d63;
   }
+  .intro-type--izvlechenie-inorodnykh-tel {
+    background-color: #5a646d;
+  }
   .intro__bg {
     display: none;
   }
