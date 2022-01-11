@@ -4513,6 +4513,9 @@ nav.menu-sub {
   .intro-type--brekety-damon {
     background-color: #303c24;
   }
+  .intro-type--lingvalnye-brekety {
+    background-color: #616254;
+  }
   .intro__bg {
     display: none;
   }
@@ -7020,6 +7023,10 @@ nav.menu-sub {
   width: 36px;
   height: 20px;
   background: url(../img/service-advantages.svg) no-repeat center center/100% auto;
+}
+.service-advantages__info li b {
+  font-family: 'Lato-Bold', serif;
+  color: #ffffff;
 }
 .service-advantages__info .relations {
   margin-top: 65px;
