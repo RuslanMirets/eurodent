@@ -9189,6 +9189,10 @@ div.close {
   width: 40px;
   height: 41px;
 }
+.category-list__item-img--diagnostika {
+  width: 44px;
+  height: 40px;
+}
 .category-list__item-title {
   font-family: 'Lato-Bold', sans-serif;
   font-size: 17px;
