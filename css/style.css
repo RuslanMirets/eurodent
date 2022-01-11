@@ -4519,6 +4519,9 @@ nav.menu-sub {
   .intro-type--lechenie-zubov-pod-sedatsiey {
     background-color: #0c5b7a;
   }
+  .intro-type--kompyuternaya-tomografiya {
+    background-color: #a5a29b;
+  }
   .intro__bg {
     display: none;
   }
