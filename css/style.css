@@ -9218,6 +9218,10 @@ div.close {
   width: 38px;
   height: 40px;
 }
+.category-list__item-img--profilaktika-i-gigiena {
+  width: 34px;
+  height: 42px;
+}
 .category-list__item-title {
   font-family: 'Lato-Bold', sans-serif;
   font-size: 17px;
