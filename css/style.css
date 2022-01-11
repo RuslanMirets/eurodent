@@ -4177,12 +4177,14 @@ nav.menu-sub {
 }
 .intro-type_dark .intro__info h2,
 .intro-type_dark .intro__info p,
-.intro-type_dark .intro__info b {
+.intro-type_dark .intro__info b,
+.intro-type_dark .intro__info i {
   color: #ffffff;
 }
 .intro-type_light .intro__info h2,
 .intro-type_light .intro__info p,
-.intro-type_light .intro__info b {
+.intro-type_light .intro__info b,
+.intro-type_light .intro__info i {
   color: #222222;
 }
 .intro-type .intro__info p {
@@ -4542,6 +4544,9 @@ nav.menu-sub {
   }
   .intro-type--germetizatsiya-fissur {
     background-color: #608eaf;
+  }
+  .intro-type--bezmetallovoe-protezirovanie {
+    background-color: #0e8076;
   }
   .intro__bg {
     display: none;
