@@ -9812,3 +9812,48 @@ div.close {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.patients-info {
+  margin: 40px 0;
+}
+.patients-info__content .title {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Lato-Bold', sans-serif;
+}
+.patients-info__content p,
+.patients-info__content a {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.patients-info__content a:hover {
+  text-decoration: none;
+}
+.patients-info__content .table-wrapper {
+  overflow-x: scroll;
+}
+.patients-info__content .table-open {
+  cursor: pointer;
+}
+.patients-info__content .table-open svg {
+  transition: transform .3s;
+}
+.patients-info__content .table-open.active svg {
+  transform: rotate(-180deg);
+}
+.patients-info__content .table {
+  max-width: 700px;
+  border-collapse: collapse;
+  display: none;
+}
+.patients-info__content .table.active {
+  display: table;
+  margin-bottom: 15px;
+}
+.patients-info__content .table-col {
+  border: 1px solid #ccc;
+  padding: 15px;
+  vertical-align: top;
+}

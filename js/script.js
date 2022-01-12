@@ -741,9 +741,6 @@ $('.category-info__content-btn').click(function () {
   $(this).toggleClass('active');
 });
 
-// $(".category-info__content-btn").html('Читать далее');
-// $(".category-info__content-btn.active").html('Скрыть');
-
 $('.category-info__content-btn').click(function () {
   if ($(this).attr('data-show') === 'true') {
     $(this).text('Читать далее');
@@ -752,4 +749,9 @@ $('.category-info__content-btn').click(function () {
     $(this).text('Скрыть');
     $(this).attr('data-show', 'true');
   }
+});
+
+$('.patients-info__content .table-open').click(function () {
+  $('.patients-info__content .table').toggleClass('active');
+  $(this).toggleClass('active');
 });
