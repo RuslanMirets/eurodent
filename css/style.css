@@ -7581,8 +7581,12 @@ nav.menu-sub {
   .section-cases.section-cases_certificates .comfort .slick-dots {
     top: -4px;
   }
+  .section-cases.section-cases_certificates .slick-track {
+    display: flex;
+  }
   .section-cases.section-cases_certificates .comfort__slide {
     margin-top: 30px;
+    height: auto;
   }
 }
 @media (max-width: 575px) {
