@@ -6758,8 +6758,8 @@ nav.menu-sub {
 .changes__media {
   display: block;
   width: 100%;
-  display: block;
   position: relative;
+  display: none;
 }
 .changes__media .controls {
   width: calc(100% + 30px);
@@ -9838,7 +9838,7 @@ div.close {
   cursor: pointer;
 }
 .patients-info__content .table-open svg {
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 .patients-info__content .table-open.active svg {
   transform: rotate(-180deg);
@@ -9856,4 +9856,107 @@ div.close {
   border: 1px solid #ccc;
   padding: 15px;
   vertical-align: top;
+}
+
+.contacts__inner {
+  width: 100%;
+  position: relative;
+}
+.contacts__info {
+  position: relative;
+}
+.contacts__info {
+  width: 1312px;
+  position: absolute;
+  height: 0;
+  left: 50%;
+  margin-left: -656px;
+  z-index: 50;
+  top: 40px;
+}
+.contacts__info-body {
+  width: 416px;
+  background: #ffffff;
+  padding: 44px 48px 48px 48px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.contacts__info-title {
+  font-family: 'Lato-Bold', sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 34px;
+}
+.contacts__info-list {
+  margin-bottom: 30px;
+}
+.contacts__info-list li {
+  position: relative;
+  padding-left: 30px;
+}
+.contacts__info-list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contacts__info-list li img {
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.contacts__info-list li a {
+  font-size: 17px;
+  line-height: 22px;
+}
+.contacts__info-list-title {
+  font-family: 'Lato-Bold', sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+.contacts__map {
+  display: flex;
+}
+.map-placemark {
+  display: none !important;
+}
+@media (max-width: 1420px) {
+  .contacts__info {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .contacts {
+    margin-top: 40px;
+  }
+  .contacts__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts__info {
+    position: static;
+    height: auto;
+    padding: 0;
+    margin: 0 auto 30px;
+  }
+  .contacts__info-body {
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+  }
+  .contacts__map iframe {
+    height: 360px;
+  }
+}
+@media (max-width: 575px) {
+  .contacts__info-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
