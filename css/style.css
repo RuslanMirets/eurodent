@@ -7332,7 +7332,7 @@ nav.menu-sub {
   display: block;
   width: 100%;
   position: relative;
-  padding-left: 98px;
+  padding-left: 116px;
   margin-top: 22px;
 }
 .doctor__education-item b {
@@ -7358,10 +7358,6 @@ nav.menu-sub {
 
   .doctor__education .ref_more {
     margin-left: 78px;
-  }
-
-  .doctor__education-item {
-    padding-left: 78px;
   }
 
   .doctor__action {
