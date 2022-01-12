@@ -9778,3 +9778,37 @@ div.close {
     margin: 0 auto;
   }
 }
+
+.gallery-cases {
+  margin-bottom: 40px;
+}
+.gallery-cases .section-title {
+  margin-bottom: 40px;
+}
+.gallery-cases__items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.gallery-cases__items img {
+  object-fit: cover;
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .gallery-cases__items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .gallery-cases .section-title {
+    margin-bottom: 20px;
+  }
+  .gallery-cases__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .gallery-cases__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
