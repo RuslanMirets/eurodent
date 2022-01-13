@@ -936,6 +936,9 @@ nav.menu {
 nav.menu-sub {
   display: flex;
 }
+nav.way {
+  display: block;
+}
 .mm-wrapper--opened .mm-slideout {
   transform: translate(0);
 }
@@ -4041,10 +4044,8 @@ nav.menu-sub {
 }
 /* Section-way */
 .section-way {
-  background: #f3f7f6;
+  background: #f3f7f6 !important;
   border-top: 1px solid #ededed;
-  padding-top: 5px;
-  padding-bottom: 11px;
   position: relative;
   z-index: 2;
 }
@@ -4056,19 +4057,22 @@ nav.menu-sub {
 .way ul {
   display: flex;
   flex-wrap: wrap;
+  padding: 10px 0;
+  row-gap: 4px;
 }
 .way li {
   display: inline-block;
-  margin-top: 10px;
   position: relative;
+  padding-right: 20px;
+  margin-right: 18px;
 }
 .way li::after {
   content: '|';
+  position: absolute;
+  right: 0;
   display: inline-block;
   font: inherit;
   color: inherit;
-  margin-left: 14px;
-  margin-right: 19px;
 }
 .way .ref {
   display: inline-block;
@@ -4081,12 +4085,13 @@ nav.menu-sub {
 .way li:last-child::after {
   display: none;
 }
-
-@media (max-width: 991px) {
-  .section-way {
-    display: none;
+@media (max-width: 575px) {
+  .way li {
+    padding-right: 12px;
+    margin-right: 10px;
   }
 }
+
 /* Section-intro */
 .section-intro {
   background: #e9efef;
@@ -7489,6 +7494,7 @@ nav.menu-sub {
 @media (max-width: 575px) {
   .section-doctor {
     padding-bottom: 48px;
+    padding-top: 20px;
   }
 
   .doctor__intro p {
@@ -7989,6 +7995,7 @@ nav.menu-sub {
 @media (max-width: 575px) {
   .cost-intro {
     padding-bottom: 46px;
+    padding-top: 20px;
   }
 
   .cost-intro__info p {
@@ -9772,10 +9779,17 @@ div.close {
   }
 }
 @media (max-width: 575px) {
+  .gallery .section-title {
+    margin-top: 20px;
+  }
   .gallery__items {
     grid-template-columns: 1fr;
     max-width: 400px;
     margin: 0 auto;
+  }
+  .gallery__item-info {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -9808,6 +9822,9 @@ div.close {
   }
 }
 @media (max-width: 575px) {
+  .gallery-cases .section-title {
+    margin-top: 20px;
+  }
   .gallery-cases__items {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -9856,6 +9873,11 @@ div.close {
   border: 1px solid #ccc;
   padding: 15px;
   vertical-align: top;
+}
+@media (max-width: 767px) {
+  .patients-info {
+    margin-top: 20px;
+  }
 }
 
 .contacts__inner {
@@ -9932,7 +9954,7 @@ div.close {
 }
 @media (max-width: 991px) {
   .contacts {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .contacts__inner {
     display: flex;
