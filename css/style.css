@@ -9804,9 +9804,11 @@ div.close {
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
+.gallery-cases__items a {
+  display: flex;
+}
 .gallery-cases__items img {
   object-fit: cover;
-  height: 100%;
 }
 @media (max-width: 991px) {
   .gallery-cases__items {
