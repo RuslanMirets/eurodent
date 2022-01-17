@@ -9982,3 +9982,233 @@ div.close {
     align-items: center;
   }
 }
+
+.about-top {
+  padding: 45px 0 100px;
+  background-color: #f3f7f6;
+}
+.about-top__info {
+  width: 100%;
+  max-width: 555px;
+}
+.about-top__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.about-top__title {
+  margin-bottom: 50px;
+}
+.about-top__text {
+  padding-bottom: 28px;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 28px;
+}
+.about-top__text p {
+  font-family: 'Lato-Light', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.about-top__text p:not(:last-child) {
+  margin-bottom: 28px;
+}
+.about-top__indicators {
+  display: flex;
+  justify-content: space-between;
+}
+.about-top__indicators-item {
+  font-family: 'Lato-Semibold', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.about-top__indicators-item span {
+  font-family: inherit;
+  font-weight: inherit;
+  color: #f39035;
+}
+.about-top__video-wrapper {
+  width: 100%;
+  max-width: 487px;
+  max-height: 348px;
+  border-radius: 5px;
+  overflow: hidden;
+  align-self: flex-end;
+}
+.about-top__video-preview {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.about-top__video-preview::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.about-top__video-preview .btn_play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.about-advantages {
+  padding: 50px 0;
+}
+.about-advantages__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about-advantages__items {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  row-gap: 50px;
+}
+.about-advantages__item {
+  width: 100%;
+  max-width: 555px;
+}
+.about-advantages__item:nth-child(even) {
+  max-width: 457px;
+}
+.about-advantages__item-head {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.about-advantages__item-head img {
+  width: 68px;
+  height: 68px;
+  padding: 14px;
+  background-color: #67bc9e;
+  border-radius: 50%;
+}
+.about-advantages__item-title {
+  font-family: 'Lato-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.about-advantages__item-text {
+  font-family: 'Lato-Light', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+.about-advantages__item-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 29px;
+}
+.about-advantages__item-images img {
+  max-width: 263px;
+}
+
+.about-technologies {
+  padding: 50px 0;
+  background-color: #f3f7f6;
+}
+.about-technologies__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-technologies__text {
+  width: 100%;
+  max-width: 576px;
+  font-family: 'Lato-Light', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+.about-technologies__items {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.about-technologies__item {
+  width: 100%;
+  max-width: 555px;
+}
+.about-technologies__item:nth-child(even) {
+  max-width: 457px;
+}
+.about-technologies__item img {
+  margin-bottom: 50px;
+}
+.about-technologies__item:nth-child(even) img {
+  margin-bottom: 0;
+}
+.about-technologies__item-title {
+  font-family: 'Lato-Black', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.about-technologies__item-title span {
+  font-size: 24px;
+  line-height: 29px;
+}
+.about-technologies__item-text p {
+  font-family: 'Lato-Light';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+.about-technologies__item-text p:not(:last-child) {
+  margin-bottom: 30px;
+}
+.about-technologies__item:nth-child(even) .about-technologies__item-text {
+  margin-bottom: 50px;
+}
+
+.section-comfort--about {
+  background-color: #ffffff;
+}
+.comfort--about {
+  margin-bottom: 50px;
+}
+.section-comfort--about .btn {
+  margin: 0 auto;
+}
+
+.about-team {
+  padding: 50px 0;
+  background-color: #f3f7f6;
+}
+.about-team__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.about-team__info {
+  width: 100%;
+  max-width: 555px;
+}
+.about-team__title {
+  margin-bottom: 30px;
+}
+.about-team__text p {
+  font-family: 'Lato-Light', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+.about-team__content img {
+  max-width: 457px;
+}
