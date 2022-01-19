@@ -9116,7 +9116,7 @@ div.close {
   .modal-success.active {
     width: calc(100% - 35px);
     max-width: calc(100% - 35px);
-    min-height: 300px;
+    min-height: 240px;
   }
   .modal-success__bg {
     display: none;
