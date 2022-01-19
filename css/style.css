@@ -4317,12 +4317,23 @@ nav.way {
   z-index: 3;
 }
 .section-intro_service .intro__info h2 {
-  margin-bottom: 28px;
+  margin-bottom: 17px;
 }
 .section-intro_service .intro__info p {
   max-width: 455px;
+  font-family: 'Lato-Light', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+.section-intro_service .intro__info b {
+  font-family: 'Lato-Semibold';
+  font-weight: 600;
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 19px;
+  margin-top: 0;
 }
 .section-intro_service .intro__image {
   width: calc(100% - 552px);
