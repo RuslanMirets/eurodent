@@ -6700,10 +6700,13 @@ nav.way {
   margin-top: 22px;
   line-height: 1.45em;
 }
+.answers__item p:last-child {
+  margin-bottom: 22px;
+}
 .answers__item .check-list {
   display: block;
   padding-top: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 22px;
 }
 .answers__item .check-list li {
   display: block;
