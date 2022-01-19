@@ -755,3 +755,75 @@ $('.patients-info__content .table-open').click(function () {
   $('.patients-info__content .table').toggleClass('active');
   $(this).toggleClass('active');
 });
+
+$('.comfort__slider--about').slick({
+  infinite: false,
+  dots: false,
+  arrows: true,
+  autoplay: false,
+  variableWidth: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  speed: 500,
+  prevArrow: '#section-comfort .comfort .controls .slick-prev',
+  nextArrow: '#section-comfort .comfort .controls .slick-next',
+
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: false,
+        dots: true,
+      },
+    },
+  ],
+});
+
+$('.professionals__slider--about').slick({
+  infinite: true,
+  dots: false,
+  arrows: true,
+  autoplay: false,
+  slidesToShow: 4,
+  prevArrow: '.professionals .controls .slick-prev',
+  nextArrow: '.professionals .controls .slick-next',
+
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        dots: true,
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 426,
+      settings: {
+        dots: true,
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
