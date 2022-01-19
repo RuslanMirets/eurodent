@@ -2107,7 +2107,7 @@ nav.way {
 }
 .section-reviews_alt .reviews .controls {
   top: calc(50% + 0px);
-  display: none;
+  display: flex;
 }
 .section-reviews_alt .btn {
   margin-left: auto;
@@ -2231,6 +2231,9 @@ nav.way {
     width: calc(100% + 20px);
     min-width: calc(100% + 20px);
     margin-left: -10px;
+  }
+  .section-reviews_alt .reviews .controls {
+    top: calc(50% - 10px);
   }
   .review {
     margin-right: 10px;
@@ -3431,7 +3434,7 @@ nav.way {
   margin-top: 20px;
 }
 .recommendation__part-content li::before {
-  content: '-';
+  content: '- ';
   font: inherit;
   display: inline;
   color: #67bc9e;

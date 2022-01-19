@@ -139,7 +139,7 @@ $('.reviews__slider').slick({
 $('.reviews__slider_alt').slick({
   infinite: false,
   dots: true,
-  arrows: false,
+  arrows: true,
   autoplay: false,
   slidesToShow: 3,
   prevArrow: '.reviews .controls .slick-prev',
