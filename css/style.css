@@ -1269,6 +1269,15 @@ nav.way {
 .main .controls .control {
   pointer-events: auto;
 }
+.main__gallery-item,
+.main__gallery-item div,
+.main__gallery-item img {
+  height: 100%;
+}
+.main__gallery-item img {
+  object-fit: cover;
+  width: 100%;
+}
 
 @media (max-width: 1420px) {
   .main__slider {
