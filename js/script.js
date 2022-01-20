@@ -401,10 +401,10 @@ if ($(window).width() < 991) {
 
 /* Section-questions */
 
-$('.question__main').click(function () {
-  /*$(this).closest('.questions__items').find('.question').not(this).closest('.question').removeClass("active");*/
-  $(this).closest('.question').toggleClass('active');
-});
+// $('.question__main').click(function () {
+//   /*$(this).closest('.questions__items').find('.question').not(this).closest('.question').removeClass("active");*/
+//   $(this).closest('.question').toggleClass('active');
+// });
 
 /* Section-pride */
 
@@ -827,3 +827,24 @@ $('.professionals__slider--about').slick({
     },
   ],
 });
+
+var accordionItem = document.getElementsByClassName('questions__accordion-item');
+var accordionBtn = document.getElementsByClassName('questions__accordion-btn');
+var i;
+
+for (i = 0; i < accordionBtn.length; i++) {
+  accordionBtn[i].addEventListener('click', function () {
+    this.classList.toggle('active');
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  });
+}
+for (i = 0; i < accordionBtn.length; i++) {
+  accordionItem[i].addEventListener('click', function () {
+    this.classList.toggle('active');
+  });
+}
