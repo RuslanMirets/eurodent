@@ -9765,10 +9765,16 @@ div.close {
 }
 .patients-info__content .title {
   display: block;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Lato-Medium';
   margin-bottom: 15px;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-family: 'Lato-Bold', sans-serif;
+}
+.patients-info__content .title.table-open {
+  margin-bottom: 0px;
+}
+.patients-info__content .title.active {
+  margin-bottom: 15px;
 }
 .patients-info__content p,
 .patients-info__content a {
@@ -9783,6 +9789,9 @@ div.close {
 }
 .patients-info__content .table-open {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .patients-info__content .table-open svg {
   transition: transform 0.3s;
@@ -9807,6 +9816,9 @@ div.close {
 @media (max-width: 767px) {
   .patients-info {
     margin-top: 20px;
+  }
+  .patients-info__content .title.table-open {
+    margin-bottom: 15px;
   }
 }
 
