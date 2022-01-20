@@ -9548,72 +9548,77 @@ div.close {
 }
 
 .doctors {
-  margin-top: 20px;
+  background-color: #f3f7f6;
+  padding-bottom: 60px;
+}
+.doctors__title {
+  text-align: left !important;
+  margin: 40px 0 !important;
 }
 .doctors__items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 50px 20px;
 }
 .doctors__item {
   text-decoration: none;
-  position: relative;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  max-height: 579px;
-}
-.doctors__item::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: url('../img//doctor-page-shadow.png') repeat-x left bottom;
-  width: 100%;
-  height: 206px;
-  z-index: 2;
-}
-.doctors__item:hover > img {
-  transform: scale(1.01);
-}
-.doctors__item img {
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  z-index: 0;
   transition: transform 0.3s;
 }
-.doctors__item-info {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  margin-top: 100%;
-  position: relative;
-  z-index: 2;
-  padding: 0 20px 20px;
+.doctors__item:hover {
+  transform: translateY(28px);
 }
-.doctors__item-info * {
-  color: #ffffff;
+.doctors__item-img {
+  display: flex;
+  background-color: #fff;
+}
+.doctors__item-img img {
+  object-fit: cover;
+}
+.doctors__item-info {
+  padding-top: 20px;
+  height: 100%;
+}
+.doctors__item-name {
+  font-family: 'Lato-Bold';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.doctors__item-speciality {
+  font-weight: 300;
+  font-family: 'Lato-Light', sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
   text-align: center;
 }
-.doctors__item-info b {
-  font-family: 'Lato-Bold', sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  margin-bottom: 10px;
-}
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .doctors__items {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (max-width: 767px) {
   .doctors__items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+  .doctors__item:hover {
+    transform: translateY(0);
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 575px) {
+  .doctors__title {
+    margin: 20px 0 !important;
+  }
   .doctors__items {
     grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
