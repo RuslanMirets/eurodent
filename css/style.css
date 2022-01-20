@@ -9881,6 +9881,7 @@ div.close {
 }
 .contacts__map {
   display: flex;
+  height: 664px;
 }
 .map-placemark {
   display: none !important;
@@ -9913,7 +9914,7 @@ div.close {
     padding: 0;
     box-shadow: none;
   }
-  .contacts__map iframe {
+  .contacts__map {
     height: 360px;
   }
 }
