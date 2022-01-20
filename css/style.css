@@ -9727,11 +9727,12 @@ div.close {
 }
 .gallery-cases .section-title {
   margin-bottom: 40px;
+  text-align: left;
 }
 .gallery-cases__items {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 .gallery-cases__items a {
   display: flex;
@@ -9741,23 +9742,21 @@ div.close {
 }
 @media (max-width: 991px) {
   .gallery-cases__items {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 767px) {
   .gallery-cases .section-title {
-    margin-bottom: 20px;
-  }
-  .gallery-cases__items {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 575px) {
-  .gallery-cases .section-title {
-    margin-top: 20px;
+    margin: 20px 0;
   }
   .gallery-cases__items {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .gallery-cases__items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
 }
 
