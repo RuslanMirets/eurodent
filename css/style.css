@@ -7562,9 +7562,39 @@ nav.way {
   z-index: 3;
   margin-top: 48px;
 }
+.input-group {
+  width: calc(100% - 360px);
+  position: relative;
+}
+.input__list {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 10px rgba(186, 186, 186, 0.2);
+  border-top: 2px solid #67bc9e;
+  padding: 25px 64px 30px 20px;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.input__list.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.input__list li:not(:last-child) {
+  margin-bottom: 18px;
+}
+.input__list li a {
+  font-size: 14px;
+  line-height: 18px;
+}
 .cost-intro form .input {
   display: block;
-  width: calc(100% - 360px);
+  width: 100%;
   max-width: none;
   border-radius: 0px;
   display: block;
@@ -7572,12 +7602,6 @@ nav.way {
   height: 52px;
   line-height: 52px;
   padding-top: 4px;
-  /*
-  background-image: url(../img/cost-search.svg);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 14px) 50%;
-  background-size: 16px auto;
-  */
   border-color: #dae3e8;
   padding-left: 26px;
   padding-right: 26px;
@@ -7593,7 +7617,7 @@ nav.way {
   appearance: none !important;
   width: 16px;
   height: 16px;
-  right: 374px;
+  right: 14px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -7649,10 +7673,7 @@ nav.way {
   height: auto;
   left: 0px;
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 16px;
-  padding-bottom: 25px;
+  padding: 25px 64px 30px 20px;
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(186, 186, 186, 0.2);
   border-top: 2px solid #67bc9e;
@@ -7668,10 +7689,12 @@ nav.way {
 .select__list label {
   display: inline-block;
   margin-right: auto;
-  margin-top: 18.5px;
   margin-bottom: 0px;
   cursor: pointer;
   transition: opacity 0.3s ease;
+}
+.select__list label:not(:last-child) {
+  margin-bottom: 18px;
 }
 .select__list label input {
   display: none;
@@ -7808,13 +7831,12 @@ nav.way {
   .cost-intro form {
     margin-top: 38px;
   }
-  .cost-intro form .input {
+  .input-group {
     width: calc(100% - 320px);
+  }
+  .cost-intro form .input {
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .cost-intro form button {
-    right: 334px;
   }
 
   .select {
@@ -7823,14 +7845,6 @@ nav.way {
 
   .select__main {
     padding-left: 20px;
-  }
-
-  .select__list {
-    padding-top: 11px;
-    padding-bottom: 21px;
-  }
-  .select__list label {
-    margin-top: 14px;
   }
 
   .cost__content .prices {
@@ -7844,14 +7858,15 @@ nav.way {
     margin-left: auto;
     margin-right: auto;
   }
-  .cost-intro form .input {
+  .input-group {
     width: 100%;
+  }
+  .cost-intro form .input {
     padding-left: 30px;
     padding-right: 60px;
     border-bottom: 0px;
   }
   .cost-intro form button {
-    right: 26px;
     top: 27px;
   }
 
@@ -7864,10 +7879,13 @@ nav.way {
     padding-left: 30px;
     padding-right: 60px;
   }
-
+  .input__list,
   .select__list {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 25px 20px;
+  }
+  .select__list span,
+  .input__list li a {
+    font-size: 15px;
   }
 }
 @media (max-width: 575px) {
@@ -7891,7 +7909,6 @@ nav.way {
     padding-right: 38px;
   }
   .cost-intro form button {
-    right: 15px;
     top: 27px;
   }
 
@@ -7900,16 +7917,6 @@ nav.way {
     padding-right: 30px;
     padding-right: 38px;
     background-position: calc(100% - 18px) center;
-  }
-
-  .select__list {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 19px;
-  }
-  .select__list label {
-    margin-top: 12px;
   }
 
   .cost__main {

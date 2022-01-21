@@ -848,3 +848,17 @@ for (i = 0; i < accordionBtn.length; i++) {
     this.classList.toggle('active');
   });
 }
+
+$('.cost-input').on('input', function () {
+  var valueLength = $(this).val().length;
+  if (valueLength > 2) {
+    $('.input__list').addClass('active');
+  } else {
+    $('.input__list').removeClass('active');
+  }
+});
+$(document).keydown(function (e) {
+  if (e.keyCode == 27 || e.keyCode == 13) {
+    $('.input__list').removeClass('active');
+  }
+});

@@ -239,10 +239,31 @@
                 </div>
               </div>
               <form action="#">
-                <input type="text" class="input" required placeholder="Введите название услуги" />
-                <button>
-                  <img src="img/cost-search.svg" alt="" />
-                </button>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="input cost-input"
+                    required
+                    placeholder="Введите название услуги"
+                  />
+                  <button>
+                    <img src="img/cost-search.svg" alt="" />
+                  </button>
+                  <ul class="input__list">
+                    <li><a class="ref" href="#">Консультация главного врача</a></li>
+                    <li>
+                      <a class="ref" href="#"
+                        >Консультация врача-стоматолога ( терапевта, хирурга, пародантолога,
+                        имплантолога)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="ref" href="#"
+                        >Развёрнутая консультация с составлением плана лечения</a
+                      >
+                    </li>
+                  </ul>
+                </div>
                 <div class="select">
                   <div class="select__main">
                     <span class="active" data-target="1"> Направление услуги </span>
