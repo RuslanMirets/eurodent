@@ -5421,6 +5421,27 @@ nav.way {
 .questions__accordion-img {
   max-width: 450px;
 }
+.questions__accordion-img--1 {
+  margin-right: 27px;
+}
+.questions__accordion-img--3 {
+  margin-right: 67px;
+}
+.questions__accordion-img--4 {
+  margin-left: 23px;
+}
+.questions__accordion-img--5 {
+  margin-right: 43px;
+}
+.questions__accordion-img--6 {
+  margin-right: 10px;
+}
+.questions__accordion-img--7 {
+  margin-right: 40px;
+}
+.questions__accordion-img--8 {
+  margin-right: 37px;
+}
 .questions__accordion-text {
   max-width: 523px;
   display: flex;
@@ -5441,6 +5462,11 @@ nav.way {
 }
 .questions__accordion-item:last-child .questions__accordion-body {
   padding-bottom: 0;
+}
+@media (max-width: 1199px) {
+  .questions__accordion-img {
+    margin: 0;
+  }
 }
 @media (max-width: 991px) {
   .questions .section-title {
