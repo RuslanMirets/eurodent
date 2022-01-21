@@ -7673,7 +7673,7 @@ nav.way {
   padding-left: 28px;
   padding-right: 52px;
   cursor: pointer;
-  background: #fff url(../img/select-bg.svg) no-repeat calc(100% - 28px) center/8px auto;
+  background: #fff url(../img/select-bg.svg) no-repeat calc(100% - 18px) center/8px auto;
 }
 .select__main span {
   display: block;
