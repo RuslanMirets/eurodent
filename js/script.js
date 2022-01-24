@@ -490,46 +490,46 @@ $('.cost__main').click(function () {
 
 /* Section-credit */
 
-$(document).ready(function () {
-  var block_pos_03 = $('.credit__image').offset().top;
-  // определяем первоначальное положение блока
-  var wrap_pos_03 = $('.credit').offset().top;
-  // позиция контейнера
-  var block_height_03 = $('.credit__image').outerHeight();
-  // высота блока
-  var wrap_height_03 = $('.credit').outerHeight();
-  // высота контейнера
-  var pos_absolute_03 = wrap_pos_03 + wrap_height_03 - block_height_03;
+// $(document).ready(function () {
+//   var block_pos_03 = $('.credit__image').offset().top;
+//   // определяем первоначальное положение блока
+//   var wrap_pos_03 = $('.credit').offset().top;
+//   // позиция контейнера
+//   var block_height_03 = $('.credit__image').outerHeight();
+//   // высота блока
+//   var wrap_height_03 = $('.credit').outerHeight();
+//   // высота контейнера
+//   var pos_absolute_03 = wrap_pos_03 + wrap_height_03 - block_height_03;
 
-  $(window).scroll(function () {
-    var wrap_height_03 = $('.credit').outerHeight();
-    // высота контейнера
-    var pos_absolute_03 = wrap_pos_03 + wrap_height_03 - block_height_03;
+//   $(window).scroll(function () {
+//     var wrap_height_03 = $('.credit').outerHeight();
+//     // высота контейнера
+//     var pos_absolute_03 = wrap_pos_03 + wrap_height_03 - block_height_03;
 
-    if ($(window).scrollTop() > pos_absolute_03 - 0) {
-      // Если страницу прокрутили дальше, чем высота родителя минус высота фикс. блока, то стопорим блок
-      $('.credit__image').css({
-        position: 'absolute',
-        top: 'calc(100% + 25px)',
-        transform: 'translateY(-100%)',
-      });
-    } else if ($(window).scrollTop() > block_pos_03 - 25) {
-      // Если страницу прокрутили дальше, чем находится наш блок, то мы этот блок фиксируем и отображаем сверху
-      $('.credit__image').css({
-        position: 'fixed',
-        top: '25px',
-        transform: 'translateY(0%)',
-      });
-    } else {
-      // Если же позиция скролла меньше (выше), чем наш блок, то возвращаем все назад
-      $('.credit__image').css({
-        position: 'absolute',
-        top: '0px',
-        transform: 'translateY(0%)',
-      });
-    }
-  });
-});
+//     if ($(window).scrollTop() > pos_absolute_03 - 0) {
+//       // Если страницу прокрутили дальше, чем высота родителя минус высота фикс. блока, то стопорим блок
+//       $('.credit__image').css({
+//         position: 'absolute',
+//         top: 'calc(100% + 25px)',
+//         transform: 'translateY(-100%)',
+//       });
+//     } else if ($(window).scrollTop() > block_pos_03 - 25) {
+//       // Если страницу прокрутили дальше, чем находится наш блок, то мы этот блок фиксируем и отображаем сверху
+//       $('.credit__image').css({
+//         position: 'fixed',
+//         top: '25px',
+//         transform: 'translateY(0%)',
+//       });
+//     } else {
+//       // Если же позиция скролла меньше (выше), чем наш блок, то возвращаем все назад
+//       $('.credit__image').css({
+//         position: 'absolute',
+//         top: '0px',
+//         transform: 'translateY(0%)',
+//       });
+//     }
+//   });
+// });
 
 /* Section-advantages */
 
