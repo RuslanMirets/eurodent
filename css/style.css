@@ -3505,7 +3505,6 @@ nav.way {
   background: #f3f7f6;
   padding-top: 56px;
   padding-bottom: 46px;
-  overflow: hidden;
 }
 
 .delete__intro {
@@ -3582,19 +3581,17 @@ nav.way {
 }
 
 .delete__decor {
-  display: inline-block;
+  display: block;
   width: 570px;
-  max-height: 100%;
+  position: relative;
+  height: calc(100% + 46px);
 }
-
 .delete__fixed {
   display: flex;
-  position: absolute;
-  top: 0px;
+  position: sticky;
+  top: 20px;
   width: 570px;
-  max-height: 100%;
   padding-top: 20px;
-  transform: translateY(0%);
 }
 .delete__fixed::before {
   content: '';
